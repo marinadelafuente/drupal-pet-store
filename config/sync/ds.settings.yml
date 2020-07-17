@@ -1,0 +1,22 @@
+disabled: false
+field_template: true
+ft-default: expert
+ft-show-colon: false
+classes:
+  region:
+    - header
+    - footer
+    - hero
+    - home-news__container
+    - home-news__img
+    - news-list
+    - animal
+    - home-news
+    - news-item
+    - ''
+  field:
+    - button
+    - img
+use_field_names: true
+_core:
+  default_config_hash: xfB0qOeoAomOThclNNokdKTrVwXLcXz13SU3-4a5-FY

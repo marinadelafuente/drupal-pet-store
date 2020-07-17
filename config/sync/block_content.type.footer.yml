@@ -1,0 +1,8 @@
+uuid: 1f5735c4-0b02-4785-9b93-d5e210db67ac
+langcode: en
+status: true
+dependencies: {  }
+id: footer
+label: Block_Footer
+revision: 0
+description: 'Footer of the website with logo and copyright info'

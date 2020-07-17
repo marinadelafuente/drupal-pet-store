@@ -1,0 +1,15 @@
+uuid: 454440d1-a1c9-4610-862d-a8276dcb36e3
+langcode: en
+status: true
+dependencies: {  }
+name: xtra_large
+label: 'Xtra Large (600x450)'
+effects:
+  39ed9479-013a-4647-bd2f-12936db0aa95:
+    uuid: 39ed9479-013a-4647-bd2f-12936db0aa95
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 450
+      anchor: center-center

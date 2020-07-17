@@ -1,0 +1,29 @@
+uuid: 1be1e3db-2ff9-425e-a28f-6cec14d3da69
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:logo:427d3b65-4e82-4cd2-bb6e-6685a52a95ae'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - liquidy
+third_party_settings:
+  block_class:
+    classes: main-logo
+id: logo
+theme: liquidy
+region: header
+weight: -7
+provider: null
+plugin: 'block_content:427d3b65-4e82-4cd2-bb6e-6685a52a95ae'
+settings:
+  id: 'block_content:427d3b65-4e82-4cd2-bb6e-6685a52a95ae'
+  label: Logo
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

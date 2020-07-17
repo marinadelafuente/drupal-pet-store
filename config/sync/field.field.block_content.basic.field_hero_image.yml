@@ -1,0 +1,33 @@
+uuid: 200c2364-ed06-4c78-bb92-c737d245a938
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_hero_image
+    - media.type.image
+  content:
+    - 'media:image:59ec0345-b429-48f7-88b2-1be8e98aa420'
+id: block_content.basic.field_hero_image
+field_name: field_hero_image
+entity_type: block_content
+bundle: basic
+label: 'Hero image'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    weight: '0'
+    target_uuid: 59ec0345-b429-48f7-88b2-1be8e98aa420
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

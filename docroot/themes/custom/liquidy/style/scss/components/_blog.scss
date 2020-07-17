@@ -1,0 +1,49 @@
+.path-friends-articles {
+  .region--content {
+    @include region--content--1;
+  }
+
+  .page-title {
+    @include page-title;
+    text-align: center;
+
+    @include breakpoint($lg) {
+      text-align: justify;
+    }
+  }
+
+  .blog-list {
+    &__post {
+      &__title {
+        color: $titleFontColor;
+        text-transform: capitalize;
+        margin-top: 2.5rem;
+        font-size: $title-md;
+
+        @include breakpoint($sm) {
+          font-size: $title-xl;
+        }
+      }
+
+      &__body {
+        padding-bottom: 2.5rem;
+        text-transform: capitalize;
+        border-bottom: 1px solid $black;
+        font-size: $text-reg;
+
+        @include breakpoint($sm) {
+          font-size: $text-lg;
+        }
+      }
+    }
+  }
+  .button-container a {
+    width: 110px;
+    height: 30px;
+
+    @include breakpoint($xs) {
+      width: 140px;
+      height: 40px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.node--type-basic-page {
+  text-align: center;
+
+  .region--content {
+    @include region--content--1;
+  }
+
+  .page-title {
+    @include page-title;
+  }
+
+  p {
+    margin-top: 1rem;
+    text-align: justify;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}

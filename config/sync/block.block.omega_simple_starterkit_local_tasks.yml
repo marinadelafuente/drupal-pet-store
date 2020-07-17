@@ -1,0 +1,22 @@
+uuid: d2dee5e4-7795-49c3-ae0f-dbc3ea0d0433
+langcode: en
+status: true
+dependencies:
+  theme:
+    - omega_simple_starterkit
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: omega_simple_starterkit_local_tasks
+theme: omega_simple_starterkit
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 02c02b20-1706-4260-955c-4f946f545cd8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'cast rate vote on node of page'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'use vote up/down'
+  - 'view media'
+  - 'vote on node:page:field_thumbs'

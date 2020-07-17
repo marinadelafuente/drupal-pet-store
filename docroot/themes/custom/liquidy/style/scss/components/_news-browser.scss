@@ -1,0 +1,103 @@
+.path-animal-news {
+  .region--content {
+    @include region--content--2;
+  }
+
+  .page-title {
+    @include page-title;
+    text-align: center;
+    @include breakpoint($sm) {
+      text-align: left;
+    }
+  }
+
+  .animal-news-view {
+    background-color: $background-color;
+    color: $black;
+  }
+
+  .animal-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+    max-width: 250px;
+
+    @include breakpoint($sm) {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: auto 0.5rem;
+      max-width: 100%;
+    }
+    @include breakpoint($lg) {
+      align-items: center;
+    }
+
+    img {
+      justify-content: flex-start;
+      padding-bottom: 0.6rem;
+      padding-right: 0;
+      width: 250px;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1.2;
+      text-align: justify;
+      padding: 0.5rem 0.5rem 0 0.5rem;
+
+      @include breakpoint($sm) {
+        line-height: 1.4;
+        padding-top: 0;
+      }
+
+      a {
+        @include title;
+        font-size: $title-sm;
+        text-decoration: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        text-align: center;
+
+        @include breakpoint($sm) {
+          text-align: justify;
+        }
+
+        @include breakpoint($md) {
+          font-size: $title-lg;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .animal-news__date {
+        font-size: $text-sm;
+        padding: 0;
+
+        @include breakpoint($md) {
+          font-size: $text-md;
+          padding-bottom: 0;
+        }
+      }
+
+      p {
+        margin: 0;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        font-size: $text-reg;
+        text-align: justify;
+        color: $black;
+
+        @include breakpoint($md) {
+          font-size: $text-md;
+          padding-bottom: 0.8rem;
+        }
+      }
+    }
+  }
+}

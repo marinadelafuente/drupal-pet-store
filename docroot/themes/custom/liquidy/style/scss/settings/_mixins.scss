@@ -1,0 +1,117 @@
+@mixin button {
+  font-family: $Indie-flower;
+  font-size: $button-sm;
+  font-weight: $medium;
+  text-shadow: 0.5px 0.5px 0.5px $black;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 30px;
+  background: linear-gradient(
+    to bottom,
+    $button-color 25%,
+    $active-link-color 100%
+  );
+  border: 2px solid $button-color;
+  box-shadow: inset 0px 1px 3px 0px $button-color;
+  border-radius: 0.6rem;
+  padding: 0;
+
+  @include breakpoint($xs) {
+    font-size: $button-lg;
+    width: 115px;
+    height: 35px;
+  }
+
+  &:hover {
+    border: 1px solid $button-color;
+    box-shadow: inset 0px 1px 3px 0px $white;
+    text-decoration: none;
+    font-weight: $semi-bold;
+    background: linear-gradient(
+      to bottom,
+      $active-link-color 25%,
+      $button-color 100%
+    );
+  }
+}
+
+@mixin menu-links {
+  color: $white;
+
+  &.is-active {
+    color: $white;
+    text-decoration: underline;
+    text-shadow: 0px 1px 2px $button-color;
+  }
+
+  &:hover {
+    color: $button-color;
+    text-decoration: none;
+    text-shadow: 0.5px 0.5px 0.5px $button-color;
+  }
+}
+
+@mixin page-title {
+  color: $titleFontColor;
+  font-family: $Indie-flower;
+  font-weight: $bold;
+  margin: 1rem auto;
+  font-size: $page-title-sm;
+  text-shadow: 1px 1px 1px $secondary-color;
+
+  @include breakpoint($md) {
+    font-size: $page-title-lg;
+  }
+  @include breakpoint($xl) {
+    font-size: $page-title-xl;
+  }
+}
+
+@mixin region--content--1 {
+  margin: 1.6rem 2rem;
+
+  @include breakpoint($md) {
+    margin: 1.6rem 5rem;
+  }
+
+  @include breakpoint($xl) {
+    margin: 1.6rem 15rem;
+  }
+}
+
+@mixin region--content--2 {
+  margin: 1.6rem 2rem;
+
+  @include breakpoint($xl) {
+    margin: 1.6rem 20rem;
+  }
+}
+
+@mixin region--content--3 {
+  margin: 1.6rem 2rem;
+
+  @include breakpoint($lg) {
+    margin: 1.6rem 10rem;
+  }
+}
+
+@mixin region--content--4 {
+  margin: 1.6rem 2rem;
+
+  @include breakpoint($sm) {
+    margin: 1.6rem 5rem;
+  }
+
+  @include breakpoint($lg) {
+    margin: 1.6rem 15rem;
+  }
+}
+
+@mixin title {
+  font-weight: $bold;
+  font-family: $Montserrat;
+  color: $primary-color;
+}

@@ -1,0 +1,8 @@
+uuid: 31862ee9-013c-489c-8ef9-014c1b4400d2
+langcode: en
+status: true
+dependencies: {  }
+id: logo
+label: Logo
+revision: 0
+description: Logo

@@ -1,0 +1,79 @@
+uuid: e208da7a-f6de-460c-8d67-3dc0c75d7bac
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.homepage
+    - views.view.browse_animals_teaser
+    - views.view.pet_news_teaser
+  content:
+    - 'block_content:basic:ba50f0c4-7b66-4d48-a73b-b891f250b7bd'
+  module:
+    - block_content
+    - panels
+    - pet_store_friends
+    - views
+id: homepage-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    5715e8ab-72b5-4e04-9285-e41015d7e026:
+      id: 'views_block:browse_animals_teaser-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 2
+      uuid: 5715e8ab-72b5-4e04-9285-e41015d7e026
+      context_mapping: {  }
+    6c55122a-d165-45f7-a4ab-fa9840377003:
+      id: pet_store_friends
+      label: 'Pet Store Friends'
+      provider: pet_store_friends
+      label_display: '0'
+      context_mapping: {  }
+      region: content
+      uuid: 6c55122a-d165-45f7-a4ab-fa9840377003
+      weight: 4
+    7b38fd94-b039-43ab-b322-4842a613ef0f:
+      id: 'block_content:ba50f0c4-7b66-4d48-a73b-b891f250b7bd'
+      label: 'Hero with image'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      context_mapping: {  }
+      region: content
+      uuid: 7b38fd94-b039-43ab-b322-4842a613ef0f
+      weight: 1
+    3df8d10e-d30b-481c-8942-fa52e3321fd7:
+      id: 'views_block:pet_news_teaser-animalnewsblock'
+      label: 'Animal News'
+      provider: views
+      label_display: visible
+      views_label: 'Animal News'
+      items_per_page: none
+      context_mapping: {  }
+      region: content
+      uuid: 3df8d10e-d30b-481c-8942-fa52e3321fd7
+      weight: 3
+  id: panels_variant
+  uuid: 58fa2f25-c2f5-4d30-baaa-f6ea996238d6
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: ''
+  page_title: ''
+  storage_type: page_manager
+  storage_id: homepage-panels_variant-0
+  builder: ipe
+page: homepage
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

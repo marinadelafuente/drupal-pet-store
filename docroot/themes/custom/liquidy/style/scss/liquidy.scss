@@ -1,0 +1,29 @@
+//UI
+@import "~@doghouse/uikit/scss/duk-styles.scss";
+
+// settings
+@import "settings/typography";
+@import "settings/colors";
+@import "settings/breakpoints";
+@import "settings/mixins";
+
+//tools
+@import "tools/buttons";
+@import "tools/reset";
+
+// base
+@import "base/main";
+
+// layouts
+@import "layout/basic-page";
+
+// components
+@import "components/header";
+@import "components/footer";
+@import "components/contact";
+@import "components/blog";
+@import "components/animal-browser";
+@import "components/animal-page";
+@import "components/news-browser";
+@import "components/news-page";
+@import "components/homepage";

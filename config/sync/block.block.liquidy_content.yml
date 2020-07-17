@@ -1,0 +1,22 @@
+uuid: 9347e648-b999-4f88-8c26-298156f3b7d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - liquidy
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: liquidy_content
+theme: liquidy
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,15 @@
+uuid: bca3d567-0343-44ea-a9c2-b3b0ff3ee129
+langcode: en
+status: true
+dependencies: {  }
+name: panoramic
+label: 'Panoramic (1900x600)'
+effects:
+  44fbbcde-7842-43c6-96ae-4edc6d20a396:
+    uuid: 44fbbcde-7842-43c6-96ae-4edc6d20a396
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1900
+      height: 600
+      anchor: center-center

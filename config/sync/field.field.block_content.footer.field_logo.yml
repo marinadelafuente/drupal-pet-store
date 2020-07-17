@@ -1,0 +1,33 @@
+uuid: 4e4337e7-e057-4f4a-8716-8573f1ba0a0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.storage.block_content.field_logo
+    - media.type.image
+  content:
+    - 'media:image:b6d93a46-489e-4aba-99d2-9c191e34f6f9'
+id: block_content.footer.field_logo
+field_name: field_logo
+entity_type: block_content
+bundle: footer
+label: Logo
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    weight: '0'
+    target_uuid: b6d93a46-489e-4aba-99d2-9c191e34f6f9
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

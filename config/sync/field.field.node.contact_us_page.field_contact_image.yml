@@ -1,0 +1,33 @@
+uuid: f9164c4f-86ae-4ac2-9a4a-4cd3e2da91b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_image
+    - media.type.image
+    - node.type.contact_us_page
+  content:
+    - 'media:image:a1777cda-e647-4d3a-a4ca-c002bdb82128'
+id: node.contact_us_page.field_contact_image
+field_name: field_contact_image
+entity_type: node
+bundle: contact_us_page
+label: 'contact image'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    weight: '0'
+    target_uuid: a1777cda-e647-4d3a-a4ca-c002bdb82128
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

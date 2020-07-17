@@ -1,0 +1,71 @@
+footer {
+  margin-top: 0.6rem;
+  background-color: $primary-color;
+  color: $white;
+}
+
+.footer {
+  &__logo {
+    text-align: center;
+    padding-top: 0.6rem;
+
+    img {
+      width: 60px;
+      @include breakpoint($sm) {
+        width: 100px;
+      }
+    }
+  }
+
+  &__about {
+    font-family: $Indie-flower;
+    text-align: center;
+    color: $third-color;
+    font-size: $text-reg;
+    margin: 2rem auto;
+
+    @include breakpoint($sm) {
+      font-size: $text-lg;
+    }
+  }
+
+  &-nav .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    padding-bottom: 1rem;
+
+    @include breakpoint($sm) {
+      margin-left: 1rem;
+    }
+
+    &-item:not(:last-child) {
+      border-right: 1px solid $white;
+    }
+
+    &-item {
+      font-family: $Montserrat;
+      font-weight: 300;
+      margin: 0;
+      padding: 0.3rem;
+      font-size: $menu-xs;
+      text-align: center;
+
+      @include breakpoint($sm) {
+        padding: 0.6rem;
+        font-size: $menu-sm;
+      }
+
+      @include breakpoint($md) {
+        padding: 0.6rem;
+        font-size: $menu-md;
+      }
+
+      a {
+        @include menu-links;
+      }
+    }
+  }
+}

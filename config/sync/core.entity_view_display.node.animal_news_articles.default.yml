@@ -1,0 +1,171 @@
+uuid: 8a8c0725-1484-41a3-925f-40d382d12744
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.animal_news_articles.body
+    - field.field.node.animal_news_articles.field_button
+    - field.field.node.animal_news_articles.field_date
+    - field.field.node.animal_news_articles.field_news_animal_image
+    - image.style.large
+    - node.type.animal_news_articles
+  module:
+    - datetime
+    - ds
+    - link
+    - media
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_news_animal_image
+        - field_date
+        - body
+        - field_button
+id: node.animal_news_articles.default
+targetEntityType: node
+bundle: animal_news_articles
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: ''
+            fi-cl: news__text
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+    region: ds_content
+  field_button:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 40
+      rel: nofollow
+      target: _blank
+      url_only: false
+      url_plain: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: div
+            fi-cl: button-container
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+    type: link
+    region: ds_content
+  field_date:
+    weight: 1
+    label: hidden
+    settings:
+      future_format: '@interval hence'
+      past_format: 'Posted @interval ago'
+      granularity: 1
+    third_party_settings: {  }
+    type: datetime_time_ago
+    region: ds_content
+  field_news_animal_image:
+    type: media_thumbnail
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: content
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    region: ds_content
+hidden:
+  links: true

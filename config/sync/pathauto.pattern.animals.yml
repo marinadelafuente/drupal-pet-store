@@ -1,0 +1,22 @@
+uuid: 6e94520d-934e-4ea1-aaaf-7874aa9c6334
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: animals
+label: animals
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  3644c0f3-545f-4d90-a39d-0dcf0b781634:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 3644c0f3-545f-4d90-a39d-0dcf0b781634
+selection_logic: and
+weight: -5
+relationships: {  }

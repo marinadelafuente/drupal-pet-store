@@ -1,0 +1,8 @@
+uuid: 38ce8bc1-8e06-4959-a119-61dfe8c22de7
+langcode: en
+status: true
+dependencies: {  }
+id: footer_navigation
+label: Navigation
+revision: 0
+description: 'Navigation menu'

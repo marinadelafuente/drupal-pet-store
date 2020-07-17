@@ -1,0 +1,22 @@
+uuid: c2994895-138b-45a9-95ca-b6a6bb12ef50
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - liquidy
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: liquidy_help
+theme: liquidy
+region: content
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

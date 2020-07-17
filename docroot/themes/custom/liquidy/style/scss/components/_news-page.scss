@@ -1,0 +1,46 @@
+.node--type-animal-news-articles {
+  .region--content {
+    @include region--content--2;
+  }
+
+  .page-title {
+    line-height: 1.4;
+    margin: 4rem 0;
+
+    @include page-title;
+    text-align: center;
+  }
+
+  .news-item {
+    margin-top: 2rem;
+    &__wrapper {
+      img {
+        max-width: 100%;
+        width: 100%;
+
+        @include breakpoint($xs) {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+
+      &__date {
+        margin: 1rem auto;
+        font-size: $text-reg;
+
+        @include breakpoint($sm) {
+          font-size: $text-md;
+        }
+      }
+
+      &__body {
+        text-align: justify;
+        font-size: $text-md;
+
+        @include breakpoint($sm) {
+          font-size: $text-lg;
+        }
+      }
+    }
+  }
+}

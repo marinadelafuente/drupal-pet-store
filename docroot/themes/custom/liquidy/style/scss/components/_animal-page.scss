@@ -1,0 +1,131 @@
+.node--type-page {
+  .region--content {
+    @include region--content--1;
+    @include breakpoint($xl) {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+  }
+
+  .page-title {
+    @include page-title;
+    text-align: center;
+
+    @include breakpoint($sm) {
+      text-align: left;
+    }
+  }
+
+  .rate-widget-thumbs-up-down {
+    text-align: center;
+    font-size: $text-xl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0 1rem 0;
+
+    @include breakpoint($sm) {
+      text-align: left;
+      margin-right: 1rem;
+      
+      flex-direction: row;
+      align-items: flex-start;
+      max-width: 100%;
+    }
+
+    ul {
+      display: flex;
+      margin-bottom: 0.7rem;
+      margin: 0;
+      padding: 0;
+
+      .thumb-up {
+        margin-right: 0.4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .thumb-down {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: 0.4rem;
+      }
+    }
+
+    .rate-undo-vote {
+      font-size: $text-xl;
+      text-align: center;
+      padding-top: 0.1rem;
+    }
+  }
+
+  .animal {
+    text-align: center;
+    @include breakpoint($sm) {
+      text-align: justify;
+    }
+
+    &__container {
+      text-align: center;
+
+      @include breakpoint($sm) {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: justify;
+      }
+    }
+
+    img {
+      width: 220px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 0.6rem;
+
+      @include breakpoint($sm) {
+        margin-bottom: 0;
+        margin-right: 0.8rem;
+        border-radius: 0;
+        width: 40%;
+        height: 100%;
+        min-width: 270px;
+        border-radius: 0.3rem;
+      }
+    }
+
+    h3 {
+      @include title;
+      font-size: $title-xl;
+      margin-top: 1rem;
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: $text-md;
+      text-align: justify;
+
+      @include breakpoint($lg) {
+        font-size: $text-lg;
+      }
+    }
+    &__type {
+      @include breakpoint($md) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      h3 {
+        margin-top: 0;
+        line-height: 1.4;
+
+        @include breakpoint($md) {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

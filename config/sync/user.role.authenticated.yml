@@ -1,0 +1,27 @@
+uuid: 72188c13-68a8-4ae7-af69-7436a76e89f0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'cancel account'
+  - 'cast rate vote on node of page'
+  - 'change own username'
+  - 'post comments'
+  - 'reset vote up/down votes'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'use vote up/down'
+  - 'view media'
+  - 'vote on node:page:field_thumbs'

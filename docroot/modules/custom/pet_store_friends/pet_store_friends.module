@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Pet store friends module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+/**
+ * Implements hook_theme() for Pet Store Friends blog.
+ */
+
+function pet_store_friends_theme($existing, $type, $theme, $path) {
+  return [
+    'pet_store_friends' => [
+      'variables' => [
+        'title' => '',
+        'description' => '',
+        'posts' => [],
+        'img' => '',
+        'link' => '',
+      ],
+    ],
+
+    'blog_list' => [
+      'variables' => [
+        'title' =>'',
+        'posts' => [],
+        'link' => '',
+      ]
+    ]
+  ];
+}

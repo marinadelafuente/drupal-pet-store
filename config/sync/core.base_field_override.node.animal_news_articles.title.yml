@@ -1,0 +1,18 @@
+uuid: ba263382-91f1-4413-8042-907c96aa6948
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.animal_news_articles
+id: node.animal_news_articles.title
+field_name: title
+entity_type: node
+bundle: animal_news_articles
+label: 'News title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

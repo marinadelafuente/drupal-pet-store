@@ -1,0 +1,24 @@
+.button-container,
+.ps-button,
+.more-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.25rem;
+  margin-bottom: 1.8rem;
+
+  a,
+  input {
+    @include button;
+  }
+}
+
+.ps-button {
+  justify-content: flex-start;
+  margin-bottom: 0px;
+}
+
+.more-link {
+  margin-top: 0;
+  margin-bottom: 3.1rem;
+}

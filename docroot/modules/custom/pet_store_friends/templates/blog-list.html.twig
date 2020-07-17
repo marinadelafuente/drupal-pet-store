@@ -1,0 +1,14 @@
+<div class="blog-list>
+  <ul class="blog-list__container">
+    {% for post in posts %}
+      <li class="blog-list__post">
+        <h3 class="blog-list__post__title">{{ post.title }}</h3>
+        <p class="blog-list__post__body">{{ post.body }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="button-container">
+    <a href="{{ link }}">Friends Website</a>
+  </div>
+</div>

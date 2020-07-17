@@ -1,0 +1,84 @@
+.path-browse-animals {
+  .region--content {
+    @include region--content--3;
+
+    h1 {
+      text-align: center;
+    }
+
+    @include breakpoint($lg) {
+      text-align: justify;
+    }
+  }
+
+  //title
+  .page-title {
+    @include page-title;
+  }
+
+  .animal-list-view {
+    background-color: $background-color;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .views-view-grid {
+      margin-top: 2.5rem;
+    }
+
+    .view-filters {
+      margin: 0 auto;
+
+      @include breakpoint($sm) {
+        width: 90%;
+      }
+    }
+
+    //filters
+    .form {
+      &--inline {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        margin: 0 auto;
+        max-width: 1000px;
+
+        .form-text,
+        .form-select {
+          font-size: $text-md;
+          background-size: $text-reg;
+          box-shadow: none;
+          outline-color: $primary-color;
+        }
+
+        @include breakpoint($sm) {
+          display: flex;
+          flex-direction: row;
+          border-bottom: 1px solid $primary-color;
+        }
+      }
+
+      //filter inputs
+      &-item {
+        margin-top: 0;
+        width: 100%;
+      }
+
+      //button
+
+      &-actions {
+        display: inline-block;
+        margin: 0 0 0 0.5rem;
+
+        input {
+          @include button;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

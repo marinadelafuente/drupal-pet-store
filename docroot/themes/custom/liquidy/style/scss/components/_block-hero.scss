@@ -1,0 +1,74 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__container {
+    position: relative;
+    display: inline-block;
+  }
+  img {
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    @include breakpoint($md) {
+      height: auto;
+    }
+  }
+
+  &__sale {
+    background-color: $secondary-color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    height: 70%;
+
+
+    &__title {
+      font-family: $Indie-flower;
+      color: $white;
+      text-shadow: 1px 1px 1px $primaryFontColor;
+      margin: 0;
+      padding-top: 1rem;
+      font-size: $page-title-xs;
+
+      @include breakpoint($sm) {
+        padding-top: 0.6rem;
+        font-size: $page-title-md;
+        padding-bottom: 0.5rem;
+      }
+
+      @include breakpoint($md) {
+        font-size: $page-title-lg;
+        padding-bottom: 1rem;
+      }
+      
+      @include breakpoint($lg) {
+        font-size: $page-title-xl;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 200;
+    color: $white;
+    text-align: center;
+    font-size: $text-md;
+    background-color: $primary-color;
+    line-height: 1.6;
+    padding: 4rem 2rem;
+
+    @include breakpoint($md) {
+      font-size: $text-xl;
+    }
+  }
+}

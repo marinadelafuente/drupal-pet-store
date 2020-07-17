@@ -1,0 +1,24 @@
+uuid: ebbb02a1-38f3-4e59-bf6b-2e74fa7d1fa0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.storage.block_content.field_about_the_company
+  module:
+    - text
+id: block_content.footer.field_about_the_company
+field_name: field_about_the_company
+entity_type: block_content
+bundle: footer
+label: 'About the company'
+description: 'Summary of the company or copyright'
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p class=\"footer__about\">© My Pet Store 2020</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

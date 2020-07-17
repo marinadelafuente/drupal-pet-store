@@ -1,0 +1,22 @@
+uuid: 5de6d032-1c34-40c4-ae0b-e5787ac77209
+langcode: en
+status: true
+dependencies: {  }
+name: medium_350x350
+label: 'Medium (300x200)'
+effects:
+  bbd23a2f-5c03-4c48-8765-2ad3802fb26c:
+    uuid: bbd23a2f-5c03-4c48-8765-2ad3802fb26c
+    id: image_resize
+    weight: -9
+    data:
+      width: 300
+      height: 200
+  c69c779b-43f9-4471-9ba2-48b1f35c9769:
+    uuid: c69c779b-43f9-4471-9ba2-48b1f35c9769
+    id: image_scale
+    weight: -10
+    data:
+      width: 300
+      height: 200
+      upscale: true

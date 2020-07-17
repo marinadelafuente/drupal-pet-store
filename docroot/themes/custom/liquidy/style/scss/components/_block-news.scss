@@ -1,0 +1,92 @@
+.news-view {
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animal-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+  max-width: 250px;
+  color: $secondaryFontColor;
+  padding: 0.5rem;
+
+  @include breakpoint($sm) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: auto 0.5rem;
+    max-width: 100%;
+
+    @include breakpoint($lg) {
+      align-items: center;
+    }
+  }
+
+  img {
+    justify-content: flex-start;
+    padding-bottom: 0.6rem;
+    width: 250px;
+  }
+
+  &__container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    line-height: 1.2;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+
+    @include breakpoint($sm) {
+      line-height: 1.4;
+      padding-top: 0;
+    }
+
+    a {
+      font-size: $title-sm;
+      font-weight: $semi-bold;
+      text-decoration: none;
+      color: $secondaryFontColor;
+      margin-bottom: 0;
+      padding-bottom: 0;
+
+      @include breakpoint($md) {
+        font-size: $title-lg;
+        text-align: justify;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .animal-news__date {
+      font-size: $text-sm;
+
+      @include breakpoint($md) {
+        font-size: $text-xreg;
+        padding-bottom: 0;
+      }
+    }
+
+    p {
+      margin: 0;
+      padding-top: 0.6rem;
+      padding-bottom: 0.6rem;
+      font-size: $text-reg;
+      text-align: center;
+
+      @include breakpoint($xs) {
+        text-align: justify;
+      }
+
+      @include breakpoint($md) {
+        font-size: $text-md;
+        padding-bottom: 0.8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+uuid: 89b7dcc7-20d3-424d-ab16-f21bf3ba0fe4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer:04f74697-9d25-4c5e-96da-5a94dceacbdd'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - liquidy
+third_party_settings:
+  block_class:
+    classes: Footer
+id: footer_2
+theme: liquidy
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:04f74697-9d25-4c5e-96da-5a94dceacbdd'
+settings:
+  id: 'block_content:04f74697-9d25-4c5e-96da-5a94dceacbdd'
+  label: Footer
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

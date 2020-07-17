@@ -1,0 +1,63 @@
+variables:
+  colors:
+    primaryColor1: '000000'
+    primaryColor2: '000000'
+    primaryColor3: '000000'
+    primaryColor4: '000000'
+    primaryColor5: '000000'
+    mainMenuBgColor: '000000'
+    mainMenuFontColor: '000000'
+    mainMenuBorderColor: '000000'
+    buttonBgColor: '000000'
+    buttonFontColor: '000000'
+    buttonBorderColor: '000000'
+  fonts:
+    defaultHeaderFont: georgia
+    defaultBodyFont: helvetica
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+logo:
+  use_default: true
+  path: ''
+favicon:
+  use_default: true
+  path: ''
+omega_toggle_intro: 1
+enable_backups: 0
+force_subtheme_creation: 0
+block_demo_mode: 0
+screen_demo_indicator: 0
+default_layout: primary
+home_layout: primary
+enable_omegags_layout: 1
+layouts: {  }
+breakpoint_group_primary: liquidy.default
+node_type_article_layout: primary
+node_type_page_layout: primary
+taxonomy_category_layout: primary
+taxonomy_tags_layout: primary
+edit_this_layout: primary
+_core:
+  default_config_hash: eUutNXoaal0BKMCA_XKQsegtPfBpEzG2Nu7c0AJkeT4
+compile_scss: 1
+show_compile_warning: 1
+enable_omega_badge: 1
+styles:
+  liquidy/liquidy: 1
+  omega/omega: 1
+  omega/omega_html_elements: 1
+  omega/omega_branding: 1
+  omega/omega_breadcrumbs: 1
+  omega/omega_main_menus: 1
+  omega/omega_messages: 1
+  omega/omega_pagers: 1
+  omega/omega_tabs: 1
+  omega/omega_taxonomy_terms: 1
+  omega/omega_forms: 1
+  omega_simple_starterkit/omega_simple_starterkit: 1
+layout-config:
+  non_omegags_info: ''
+node_type_contact_page_layout: primary

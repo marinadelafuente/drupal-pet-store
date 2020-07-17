@@ -1,0 +1,47 @@
+uuid: def34aeb-ff69-466a-aad4-51e04ee1303f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.field.block_content.footer.field_about_the_company
+    - field.field.block_content.footer.field_logo
+  module:
+    - media_library
+    - path
+    - text
+id: block_content.footer.default
+targetEntityType: block_content
+bundle: footer
+mode: default
+content:
+  field_about_the_company:
+    weight: 3
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_logo:
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

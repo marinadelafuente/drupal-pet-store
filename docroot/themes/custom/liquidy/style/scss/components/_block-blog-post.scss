@@ -1,0 +1,126 @@
+.block {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 1.4rem auto 1rem auto;
+    justify-content: center;
+
+    @include breakpoint($xs) {
+      max-width: 90%;
+      margin: 2rem;
+    }
+  }
+
+  &__img {
+    max-width: 175px;
+    max-height: 175px;
+    margin-right: 0.7rem;
+    margin-left: 0.3rem;
+
+    @include breakpoint($xs) {
+      max-width: 200px;
+      max-height: 200px;
+      margin-right: 1rem;
+    }
+
+    @include breakpoint($sm) {
+      max-width: 250px;
+      max-height: 250px;
+    }
+
+    @include breakpoint($md) {
+      max-width: 40%;
+      max-height: 40%;
+    }
+  }
+  &__info {
+    padding-left: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include breakpoint($xs) {
+      max-width: 40%;
+      max-height: 40%;
+    }
+  }
+  &__title {
+    @include title;
+    text-shadow: 0 0.5px 0.5px $primaryFontColor;
+    font-size: $title-sm;
+    margin: 0;
+
+    @include breakpoint($xs) {
+      font-size: $title-md;
+    }
+
+    @include breakpoint($sm) {
+      font-size: $title-xl;
+      margin: auto;
+    }
+  }
+
+  &__description {
+    font-size: $text-sm;
+
+    @include breakpoint($md) {
+      font-size: $text-lg;
+      margin: 0;
+    }
+  }
+
+  &__post {
+    border: $black 1px solid;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    position: absolute;
+    left: -86px;
+    top: 55px;
+    display: block;
+    background-color: $white;
+    width: 200px;
+
+    @include breakpoint($xs) {
+      margin: 0;
+      left: -73px;
+      top: 67px;
+      width: 211px;
+    }
+
+    @include breakpoint($sm) {
+      margin: 0;
+      top: 73px;
+      width: 255px;
+    }
+
+    @include breakpoint($md) {
+      padding: 0.4rem;
+      top: 90px;
+      width: 311px;
+    }
+
+    @include breakpoint($lg) {
+      width: 275px;
+    }
+
+    &__title {
+      font-size: $title-sm;
+      margin: 0;
+
+      @include breakpoint($sm) {
+        font-size: $text-lg;
+      }
+    }
+
+    &__body {
+      font-size: 0.6rem;
+      display: none;
+
+      @include breakpoint($sm) {
+        display: inline-block;
+      }
+    }
+  }
+}

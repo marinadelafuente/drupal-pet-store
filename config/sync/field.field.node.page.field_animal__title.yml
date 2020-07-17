@@ -1,0 +1,21 @@
+uuid: f9b3891d-cd1b-420e-9aa0-c25d4294422b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_animal__title
+    - node.type.page
+  module:
+    - text
+id: node.page.field_animal__title
+field_name: field_animal__title
+entity_type: node
+bundle: page
+label: Animal__name
+description: 'Name of the animal for the frontpage view'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

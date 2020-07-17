@@ -1,0 +1,40 @@
+// background-colors
+$primaryBackgroundColor: #f5f7f0;
+$secondaryBackgroundColor: #0b486b;
+$thirdBackgroundColor: #0b486b7e;
+
+// font-colors
+$primaryFontColor: #000000;
+$secondaryFontColor: #ffff;
+$titleFontColor:#0b486b;
+
+// Animal news
+.path-frontpage {
+  
+  .views-element-container {
+    background-color: $secondaryBackgroundColor;
+    @include region--content--1;
+
+    h2 {
+      @include page-title;
+      color: $secondaryFontColor;
+      text-shadow: 1px 1px 1px $primaryFontColor;
+      margin: 0;
+      padding: 0.8rem 0;
+      text-align: center;
+    }
+  }
+
+  // Animal browser
+  .views-element-container:nth-of-type(2) {
+    background-color: $primaryBackgroundColor;
+
+    h2 {
+      @include page-title;
+      text-shadow: 1px 1px 1px $secondary-color;
+      margin: 0;
+      padding: 0.8em 0;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+uuid: f80482c6-5c6f-4084-a5f2-0d7105cfae49
+langcode: en
+status: true
+dependencies: {  }
+id: votingupdown
+label: VotingUpDown
+value_type: points
+description: ''

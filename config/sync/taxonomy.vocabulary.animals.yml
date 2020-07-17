@@ -1,0 +1,8 @@
+uuid: b5394da0-6547-442c-9518-ce04c517049c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Animal types'
+vid: animals
+description: ''
+weight: 0

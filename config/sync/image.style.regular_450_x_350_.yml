@@ -1,0 +1,15 @@
+uuid: 47e5df9c-fdff-4f4f-ae5c-729e6db83074
+langcode: en
+status: true
+dependencies: {  }
+name: regular_450_x_350_
+label: 'Regular (450 x 350)'
+effects:
+  bd837a60-005d-42af-84b6-019f398ce5ff:
+    uuid: bd837a60-005d-42af-84b6-019f398ce5ff
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 450
+      height: 350
+      anchor: center-center

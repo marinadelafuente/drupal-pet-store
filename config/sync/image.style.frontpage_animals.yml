@@ -1,0 +1,15 @@
+uuid: ee0b83b4-718f-44af-8bc5-6f105308e9d5
+langcode: en
+status: true
+dependencies: {  }
+name: frontpage_animals
+label: 'Frontpage-animals (250x150)'
+effects:
+  eb1d55b7-66fc-4789-949b-e4db146fe09e:
+    uuid: eb1d55b7-66fc-4789-949b-e4db146fe09e
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 250
+      height: 150
+      anchor: center-center

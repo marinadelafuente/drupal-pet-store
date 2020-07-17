@@ -1,0 +1,152 @@
+uuid: 43a57825-b43c-4122-88c1-1332ba6a1f1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.field_animal__title
+    - field.field.node.page.field_animal_image
+    - field.field.node.page.field_animal_types
+    - field.field.node.page.field_button
+    - field.field.node.page.field_care_instructions
+    - field.field.node.page.field_pet_for
+    - field.field.node.page.field_timestamp
+    - field.field.node.page.field_type_pet
+    - image.style.large
+    - node.type.page
+  module:
+    - ds
+    - link
+    - media
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: no_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: content
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - rate_vote_widget
+        - field_animal_image
+        - field_vote
+        - field_type_pet
+        - field_care_instructions
+        - field_pet_for
+        - field_timestamp
+        - links
+        - field_button
+        - field_voting_now
+        - field_q
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  field_animal_image:
+    type: media_thumbnail
+    weight: 1
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    region: ds_content
+  field_button:
+    weight: 8
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: div
+            fi-cl: button-container
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+    type: link
+    region: ds_content
+  field_care_instructions:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_pet_for:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_timestamp:
+    type: timestamp_ago
+    weight: 6
+    region: ds_content
+    label: hidden
+    settings:
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
+    third_party_settings: {  }
+  field_type_pet:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  links:
+    weight: 7
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  rate_vote_widget:
+    weight: 0
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_animal__title: true
+  field_animal_types: true

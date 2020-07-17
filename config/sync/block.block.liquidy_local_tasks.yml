@@ -1,0 +1,22 @@
+uuid: ac9d9f0b-cc33-42ce-b218-bc298617841b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - liquidy
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: liquidy_local_tasks
+theme: liquidy
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

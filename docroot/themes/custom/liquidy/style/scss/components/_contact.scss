@@ -1,0 +1,150 @@
+.node--type-contact-us-page {
+  .region--content {
+    @include region--content--1;
+  }
+
+  .page-title {
+    display: none;
+  }
+
+  .contact-us {
+    &__header {
+      position: relative;
+      display: inline-block;
+
+      &-img img {
+        position: relative;
+        text-align: center;
+        opacity: 0.3;
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 1em;
+        width: 100%;
+      }
+      &-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 70%;
+        margin: 0;
+
+        h2 {
+          @include page-title;
+          text-shadow: 1px 1px 1px $secondary-color;
+          margin: 0;
+          font-size: $page-title-md;
+
+          @include breakpoint($sm) {
+            font-size: $page-title-xl;
+          }
+        }
+      }
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $primary-color;
+      color: $white;
+      padding: 1rem;
+      margin: 1rem 0 2rem 0;
+
+      @include breakpoint($md) {
+        flex-direction: row;
+        justify-content: center;
+        padding: 1.5rem;
+      }
+    }
+
+    .field-label-above {
+      text-transform: uppercase;
+      font-size: $title-lg;
+    }
+
+    &__map {
+      text-align: center;
+      margin: 2rem 0;
+      @include breakpoint($md) {
+        padding-right: 2rem;
+      }
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &-title {
+        padding-bottom: 1px;
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+
+      &-items {
+        padding-right: 0.3rem;
+        font-size: $text-md;
+
+        @include breakpoint($md) {
+          padding: 0.4rem;
+          font-size: $text-xl;
+        }
+
+        a {
+          color: $white;
+          text-decoration: underline;
+
+          &:hover {
+            color: $button-color;
+          }
+        }
+      }
+    }
+  }
+
+  .field {
+    label,
+    .field__label-tags {
+      font-size: $title-reg;
+      font-weight: $semi-bold;
+    }
+
+    input {
+      box-shadow: none;
+      outline-color: $primary-color;
+    }
+
+    textarea {
+      box-shadow: none;
+      border: 1px solid $grey;
+    }
+
+    &--type-text-with-summary {
+      margin: 1rem 0;
+    }
+
+    &--name-field-email-us {
+      margin: 1rem 0;
+    }
+
+    &__label {
+      font-size: $title-lg;
+      font-weight: $semi-bold;
+      color: $primary-color;
+    }
+  }
+
+  .confirmation__message {
+    text-align: center;
+    color: $titleFontColor;
+    position: relative;
+    top: -29px;
+    background-color: $background-color;
+  }
+}

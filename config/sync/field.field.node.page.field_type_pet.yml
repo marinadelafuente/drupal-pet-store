@@ -1,0 +1,24 @@
+uuid: 15a88bbd-ba3a-4d2c-aa23-6af34934e60e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_pet
+    - node.type.page
+  module:
+    - text
+id: node.page.field_type_pet
+field_name: field_type_pet
+entity_type: node
+bundle: page
+label: 'Type pet'
+description: 'Write here about what kind of animal it is.'
+required: false
+translatable: false
+default_value:
+  -
+    value: "<h3 class=\"animal__type__title\">Type of pet</h3>\r\n\r\n<p class=\"animal__type__text\">Celiac 8-bit duis snackwave pork belly biodiesel. Gochujang flexitarian venmo, skateboard chicharrones literally selvage hammock cred woke officia enim veniam. Ut neutra poke trust fund yr, chicharrones ethical locavore echo park pabst hammock. Franzen ut single-origin coffee shaman, bitters nostrud cold-pressed consequat. Fixie activated charcoal lorem et, glossier aute DIY. Air plant yuccie in.</p>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

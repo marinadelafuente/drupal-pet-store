@@ -1,0 +1,14 @@
+uuid: 6d04c335-d673-4ce2-95b0-b05ce39650f3
+name: 'My Pet Store'
+mail: mdelafuente18@gmail.com
+slogan: 'Exclusive selection of animals'
+page:
+  403: ''
+  404: ''
+  front: /homepage
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

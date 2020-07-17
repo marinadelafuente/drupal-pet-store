@@ -1,0 +1,66 @@
+uuid: 376a0096-1320-437d-9b1f-651c8dd3f354
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.animal_news_articles.body
+    - field.field.node.animal_news_articles.field_button
+    - field.field.node.animal_news_articles.field_date
+    - field.field.node.animal_news_articles.field_news_animal_image
+    - node.type.animal_news_articles
+  module:
+    - datetime
+    - link
+    - media_library
+    - text
+id: node.animal_news_articles.default
+targetEntityType: node
+bundle: animal_news_articles
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 4
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_button:
+    weight: 26
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_date:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_news_animal_image:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

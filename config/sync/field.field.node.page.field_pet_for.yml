@@ -1,0 +1,24 @@
+uuid: 913203c0-4e28-4ed7-a43f-70fa628cd4e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pet_for
+    - node.type.page
+  module:
+    - text
+id: node.page.field_pet_for
+field_name: field_pet_for
+entity_type: node
+bundle: page
+label: 'For people who'
+description: 'Describe here what kind of people this pet would be great for.'
+required: false
+translatable: false
+default_value:
+  -
+    value: "<h3 class=\"animal__people__title\">This pet is great for people who...</h3>\r\n\r\n<p class=\"animal__people__text\">Celiac 8-bit duis snackwave pork belly biodiesel. Gochujang flexitarian venmo, skateboard chicharrones literally selvage hammock cred woke officia enim veniam. Ut neutra poke trust fund yr, chicharrones ethical locavore echo park pabst hammock. Franzen ut single-origin coffee shaman, bitters nostrud cold-pressed consequat. Fixie activated charcoal lorem et, glossier aute DIY. Air plant yuccie in.</p>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,22 @@
+uuid: 42698589-965d-412c-a66f-3f838bfa1c27
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: news
+label: news
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  8126c56b-abd4-4c7c-8a80-64f8b1a438df:
+    id: node_type
+    bundles:
+      animal_news_articles: animal_news_articles
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8126c56b-abd4-4c7c-8a80-64f8b1a438df
+selection_logic: and
+weight: -5
+relationships: {  }

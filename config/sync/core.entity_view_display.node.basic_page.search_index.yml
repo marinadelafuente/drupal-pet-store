@@ -1,0 +1,31 @@
+uuid: fb3bdc88-8f15-4ee5-a3cf-b649a1a31bc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.basic_page.body
+    - field.field.node.basic_page.field_image
+    - node.type.basic_page
+  module:
+    - text
+    - user
+id: node.basic_page.search_index
+targetEntityType: node
+bundle: basic_page
+mode: search_index
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_image: true

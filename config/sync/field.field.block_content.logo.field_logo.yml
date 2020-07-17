@@ -1,0 +1,32 @@
+uuid: 5133444d-6aa6-4f25-b013-2568a42cc210
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.logo
+    - field.storage.block_content.field_logo
+    - media.type.image
+  content:
+    - 'media:image:b6d93a46-489e-4aba-99d2-9c191e34f6f9'
+id: block_content.logo.field_logo
+field_name: field_logo
+entity_type: block_content
+bundle: logo
+label: Logo
+description: 'Add here the logo of your website'
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: b6d93a46-489e-4aba-99d2-9c191e34f6f9
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

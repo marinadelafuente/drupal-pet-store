@@ -1,0 +1,15 @@
+liquidy:
+  omega:
+    allow_clone_for_subtheme: true
+    allow_enable_disable: true
+    title: "Default library for the liquidy theme"
+    scss:
+      style/css/liquidy.css: "style/scss/liquidy.scss"
+  version: VERSION
+  js:
+    js/liquidy.js: {}
+  css:
+    theme:
+      style/css/main.css: {}
+  dependencies:
+    - core/jquery

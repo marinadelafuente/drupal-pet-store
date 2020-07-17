@@ -1,0 +1,225 @@
+uuid: 445c1964-c3c7-4ce7-a610-c0a934e94de6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.contact_us_page.body
+    - field.field.node.contact_us_page.field_background_image
+    - field.field.node.contact_us_page.field_contact_image
+    - field.field.node.contact_us_page.field_email_us
+    - field.field.node.contact_us_page.field_gmap
+    - field.field.node.contact_us_page.field_title
+    - image.style.panoramic
+    - node.type.contact_us_page
+  module:
+    - ds
+    - media
+    - simple_gmap
+    - text
+    - user
+    - webform
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_background_image
+        - node_title
+        - field_gmap
+        - body
+        - field_email_us
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h2
+          class: ''
+          link: false
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: div
+            fi-cl: contact-us__header-title
+            fi-at: ''
+            suffix: '</div>'
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+id: node.contact_us_page.full
+targetEntityType: node
+bundle: contact_us_page
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: '<div class="contact-us__details">'
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: '</div></div>'
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    region: ds_content
+  field_background_image:
+    type: media_thumbnail
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      image_style: panoramic
+      image_link: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: '<div class="contact-us__header">'
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: ''
+            fi-cl: contact-us__header-img
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+  field_email_us:
+    weight: 4
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: ds_content
+  field_gmap:
+    type: simple_gmap
+    weight: 2
+    region: ds_content
+    label: above
+    settings:
+      include_static_map: true
+      apikey: AIzaSyC8pZd6eAYdNGpMihFil6ti1T6SUcEDDE0
+      iframe_width: '850'
+      iframe_height: '350'
+      iframe_title: 'Find Us here:'
+      static_scale: 1
+      link_text: 'use address'
+      zoom_level: 14
+      map_type: m
+      langcode: en
+      include_map: false
+      include_link: false
+      include_text: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: 'You can find us here:'
+            prefix: '<div class="contact-us__container">'
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: contact-us__map-container
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: ''
+            fi-cl: contact-us__map
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+  links:
+    weight: 5
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_contact_image: true
+  field_title: true

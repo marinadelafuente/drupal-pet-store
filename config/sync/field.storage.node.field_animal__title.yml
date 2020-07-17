@@ -1,0 +1,20 @@
+uuid: 80c885d4-9fb9-40ab-a1af-bd5344a98f97
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_animal__title
+field_name: field_animal__title
+entity_type: node
+type: text
+settings:
+  max_length: 50
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

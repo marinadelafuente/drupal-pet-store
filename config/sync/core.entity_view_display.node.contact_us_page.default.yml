@@ -1,0 +1,118 @@
+uuid: a804d8bd-2176-4098-847c-487f82577002
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contact_us_page.body
+    - field.field.node.contact_us_page.field_background_image
+    - field.field.node.contact_us_page.field_contact_image
+    - field.field.node.contact_us_page.field_email_us
+    - field.field.node.contact_us_page.field_gmap
+    - field.field.node.contact_us_page.field_title
+    - node.type.contact_us_page
+  module:
+    - ds
+    - media
+    - simple_gmap
+    - text
+    - user
+    - webform
+id: node.contact_us_page.default
+targetEntityType: node
+bundle: contact_us_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_background_image:
+    type: media_thumbnail
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_contact_image:
+    type: media_thumbnail
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_email_us:
+    weight: 3
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_gmap:
+    weight: 5
+    label: above
+    settings:
+      include_static_map: true
+      apikey: AIzaSyC8pZd6eAYdNGpMihFil6ti1T6SUcEDDE0
+      iframe_width: '200'
+      iframe_height: '200'
+      iframe_title: 'Find Us here:'
+      static_scale: 1
+      include_link: true
+      link_text: 'use address'
+      zoom_level: 14
+      map_type: m
+      langcode: en
+      include_map: false
+      include_text: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: 'Find Us Here'
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    type: simple_gmap
+    region: content
+  field_title:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
