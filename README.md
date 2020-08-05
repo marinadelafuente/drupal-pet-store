@@ -9,3 +9,7 @@ Drupal 8 project for an internship:
 4. Creation of own style subtheme with SASS (variables, mixings) and using a specific given UI kit
 5. Following provided frameworks but own design.
 6. Responsive design using mobile first strategy.
+
+![Appearance](https://github.com/marinadelafuente/drupal-pet-store/blob/master/My%20Pet%20Store.png)
+
+
